@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    background-image: url("/imagens/planofundo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header {
+    background-color: aquamarine;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0;
+    background-color: aqua;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgb(53, 53, 59);
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+}
+
+header li a:hover  {
+    background-color: rgb(117, 115, 126);
+}
+
+.corpo {
+    padding: 50px;
+}
+footer {
+    background-color: black;
+    color: aliceblue;
+    padding-bottom: 20PX;
+}
+
+caption {
+    font-size: 30px;
+}
+
+table, th, td {
+    border: 3px solid rgb(113, 114, 184);
+    border-radius: 5px;
+}
+
+th {
+    padding: 0 5px;
+}
+
+table {
+    border-color: aliceblue;
+    border-spacing: 5px;
+    background-color: rgb(231, 236, 240);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(67, 96, 121, 0.5);
+}
+
+th:nth-child(even), td:nth-child(even){
+    background-color: rgba(72, 100, 124, 0.5);
+}
+
+td:hover, th:hover {
+    background-color: wheat;
+}
+
+th a, td a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.fototab {
+    padding: 0;
+    margin-bottom: -4px;
+}
+
+
+
+
+
