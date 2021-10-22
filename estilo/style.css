@@ -3,7 +3,7 @@ body {
     padding: 0px;
     position: absolute;
     width: 100%;
-    background-image: url("/imagens/planofundo.jpg");
+    background-image: url("../imagens/planofundo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
