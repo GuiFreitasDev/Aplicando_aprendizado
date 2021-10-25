@@ -93,7 +93,19 @@ th a, td a {
     margin-bottom: -4px;
 }
 
+input {
+    display: block;
+}
 
+form {
+    width: 40%;
+    margin: 0 auto;
+}
 
+.tcentro {
+    text-align: center;
+}
 
-
+input#notificar {
+    display: inline;
+}

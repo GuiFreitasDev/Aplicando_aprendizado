@@ -13,25 +13,39 @@
         <h1>Minha sala de testes</h1>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="">Segunda pagina</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Sobre</a></li>
+            <li><a href="#">Segunda pagina</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
         </ul>
     </header>
 
     <hr>
     <!--site gerador de txtos Lorem ipsum-->
     <div class="corpo">
-        <h2>Formulário</h2>
+        <h2 class="tcentro">Formulário</h2>
         <form action="" autocomplete="off">
             <fieldset>
-                <legend>Cadastro:</legend>
+                <legend>Login</legend>
                 <label for="fname">First name:</label>
-                <input type="text" name="fname" id="fname"><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" name="lname" id="lname"><br><br>
+                <input type="text" name="fname" id="fname" placeholder="Primeiro nome">
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </fieldset>
+
+            <fieldset>
+                <legend>Novo usuário</legend>
+                <label for="fname">First name:</label>
+                <input type="text" name="fname" id="fname" placeholder="Primeiro nome">
+                <label for="lname">First name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Último nome">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email valido">
+                <label for="password">Senha</label>
+                <input type="password" name="senha" id="senha">
+                <label for="notificar">Sim</label>
+                <input type="radio" name="notificar" id="notificar">
+                <label for="notificar">Não</label>
+                <input type="radio" name="notificar" id="notificar">
             </fieldset>
         </form>
         
