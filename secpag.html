@@ -22,16 +22,36 @@
     <hr>
     <!--site gerador de txtos Lorem ipsum-->
     <div class="corpo">
+        
+        <h2>Um pouco de javascript</h2>
+        
+        <form action="" autocomplete="off">
+        <fieldset>
+            <legend>Testando javascript</legend>
+            <label for="vel">Qual a velocida:</label>
+            <input type="number" name="vel" id="vel">
+            <input type="button" value="Verificar" onclick="calcular()">
+            <div id="texto" style="height: 50px;">Preparado?</div>
+        </fieldset>
+        </form>        
+        
+        <br>
+        <hr>
+        <br>
+
         <h2 class="tcentro">Formulário</h2>
         <form action="" autocomplete="off">
             <fieldset>
                 <legend>Login</legend>
-                <label for="fname">First name:</label>
-                <input type="text" name="fname" id="fname" placeholder="Primeiro nome">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="logfname">First name:</label>
+                <input type="text" name="logfname" id="logfname" placeholder="Primeiro nome">
+                <label for="logemail">Email:</label>
+                <input type="email" name="logemail" id="logemail" placeholder="Email">
+                <input type="submit" name="seila" id="submit">
             </fieldset>
+        </form>
 
+        <form action="">
             <fieldset>
                 <legend>Novo usuário</legend>
                 <label for="fname">First name:</label>
@@ -43,9 +63,10 @@
                 <label for="password">Senha</label>
                 <input type="password" name="senha" id="senha">
                 <label for="notificar">Sim</label>
-                <input type="radio" name="notificar" id="notificar">
+                <input type="radio" name="notificar" id="s">
                 <label for="notificar">Não</label>
-                <input type="radio" name="notificar" id="notificar">
+                <input type="radio" name="notificar" id="n">
+                <input type="button" value="Cadastrar">
             </fieldset>
         </form>
         
@@ -58,19 +79,58 @@
 
         <hr>
 
-        <h2>Titutolo de texto aleatório</h2>
-        <p>
-            texto aleatório
-        </p>
+        <h2>Um pouco de javascript</h2>
+        
+        <form action="" autocomplete="off">
+        <fieldset>
+            <legend>Testando javascript</legend>
+            <label for="pais">Qual seu pais:</label>
+            <input type="text" name="pais" id="pais">
+            <input type="button" value="Testar" onclick="testar()">
+            <div id="res" style="height: 20px;">E ai?</div>
+        </fieldset>
+        </form>
+
 
     </div>
+
     <footer>
         <hr>
-
         <h2>Titutolo de texto aleatório</h2>
         <p>
             texto aleatório
         </p>
+        
+
     </footer>
+
+    <script>
+        function testar() {
+            var pais = window.document.querySelector("input#pais");
+            var res = window.document.getElementById("res");
+            var tpais = pais.value;
+
+            if (tpais == "Brasil") {
+                res.innerHTML="Você é Brasileiro!!";
+            } else {
+                res.innerHTML="Você é Gringo!!";
+            }
+        }
+        
+        function calcular() {
+            var vel = document.getElementById("vel");
+            var texto = document.querySelector('div#texto');
+            var nvel = vel.value;
+
+            if (nvel > 60){
+                texto.innerHTML=`Deixa de ser louco, ${nvel}km/h esta acima do limite de velocidade!
+                <p>Use cinto de segurança!</p>`;
+            } else {
+                texto.innerHTML=`Muito bem, ${nvel}km/h tambem chega lá!
+                <p>Use cinto de segurança!</p>`
+            }
+        }
+    </script>
+
 </body>
 </html>
