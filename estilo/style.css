@@ -119,3 +119,13 @@ legend {
 input#notificar {
     display: inline;
 }
+
+section {
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
